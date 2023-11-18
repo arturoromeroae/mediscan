@@ -15,6 +15,7 @@ public class UsuarioController {
 	@Autowired
 	private IUsuarioRepository usuario;
 	
+	@CrossOrigin(origins = "https://mediscan-99f31c760e05.herokuapp.com/api/usuario")
 	@GetMapping
 	public List<Usuario> listar() {
 		return usuario.findAll();

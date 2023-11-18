@@ -16,6 +16,7 @@ public class BotDataController {
 	@Autowired
 	private BotDataService service;
 	
+	@CrossOrigin(origins = "https://mediscan-99f31c760e05.herokuapp.com/api/bot")
 	@GetMapping
 	public List<BotData>listar(){
 		return service.getAllBotData();
